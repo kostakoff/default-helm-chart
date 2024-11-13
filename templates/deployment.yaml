@@ -38,7 +38,7 @@ spec:
             name: {{ include "app.fullName" . }}-profile
         - name: app-secret-config
           secret:
-            name: {{ include "app.fullName" . }}
+            secretName: {{ include "app.fullName" . }}
         - name: nginx-config
           configMap:
             name: {{ include "app.fullName" . }}-nginx
@@ -53,7 +53,7 @@ spec:
       containers:
       - name: nginx-proxy
         image: {{ include "nginxproxy.image" . }}:{{ .Values.images.nginxproxy.imageTag }}
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         command:
           - nginx
           - -g
@@ -101,7 +101,7 @@ spec:
           - configMapRef:
               name: {{ include "app.fullName" . }}
         image: {{ include "app.image" . }}:{{ .Values.images.app.imageTag | default .Chart.AppVersion }}
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         livenessProbe:
           failureThreshold: 5
           httpGet:
@@ -134,10 +134,12 @@ spec:
             mountPath: /app/application-kube.yml
             subPath: application-kube.yml
             readOnly: true
-          - name: app-jsecopts
+          - name: app-secret-config
+            mountPath: /etc/secrets/secrets.properties
+            subPath: secrets.properties
+          - name: app-secret-config
             mountPath: /etc/secrets/jsec-opts.txt
             subPath: jsec-opts.txt
-            readOnly: true
           - name: app-keystore
             mountPath: /etc/secrets/keystore
         terminationMessagePath: FallbackToLogsOnError
