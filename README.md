@@ -39,3 +39,6 @@ helm upgrade --install application . -f ./values-secrets-orig.yaml
 ```bash
 helm uninstall application
 ```
+## Architecture design
+Diagram
+![Diagram](Diagram.jpg)

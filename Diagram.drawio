@@ -1,0 +1,98 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="VIarURxekh9obouurBbf">
+    <mxGraphModel dx="1114" dy="767" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="snzapVC_qN_vFm2J8P3f-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="snzapVC_qN_vFm2J8P3f-1" target="snzapVC_qN_vFm2J8P3f-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="snzapVC_qN_vFm2J8P3f-1" value="http request" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="305" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="snzapVC_qN_vFm2J8P3f-2" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="720" as="sourcePoint" />
+            <mxPoint x="200" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snzapVC_qN_vFm2J8P3f-4" value="&amp;lt;-- Company network&lt;div&gt;&lt;div&gt;Kubernetes network --&amp;gt;&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="snzapVC_qN_vFm2J8P3f-2">
+          <mxGeometry x="-0.3056" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snzapVC_qN_vFm2J8P3f-6" value="Application namespace" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="240" width="510" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="snzapVC_qN_vFm2J8P3f-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="snzapVC_qN_vFm2J8P3f-6" source="snzapVC_qN_vFm2J8P3f-7" target="snzapVC_qN_vFm2J8P3f-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="snzapVC_qN_vFm2J8P3f-7" value="&lt;div&gt;Application&lt;/div&gt;Ingress" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="snzapVC_qN_vFm2J8P3f-6">
+          <mxGeometry x="20" y="45" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="snzapVC_qN_vFm2J8P3f-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="snzapVC_qN_vFm2J8P3f-6" source="snzapVC_qN_vFm2J8P3f-8" target="snzapVC_qN_vFm2J8P3f-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="snzapVC_qN_vFm2J8P3f-8" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Configmap&lt;/div&gt;Application&lt;br&gt;SpringBoot profile yaml" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="snzapVC_qN_vFm2J8P3f-6">
+          <mxGeometry x="420" y="30" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="snzapVC_qN_vFm2J8P3f-9" value="Certmanager-io&lt;div&gt;Certificate&lt;/div&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="snzapVC_qN_vFm2J8P3f-6">
+          <mxGeometry x="20" y="260" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="snzapVC_qN_vFm2J8P3f-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="snzapVC_qN_vFm2J8P3f-6" source="snzapVC_qN_vFm2J8P3f-10" target="snzapVC_qN_vFm2J8P3f-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="snzapVC_qN_vFm2J8P3f-10" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Secret&lt;/div&gt;Application&lt;br&gt;SpringBoot secret properties" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="snzapVC_qN_vFm2J8P3f-6">
+          <mxGeometry x="420" y="140" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="snzapVC_qN_vFm2J8P3f-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="snzapVC_qN_vFm2J8P3f-6" source="snzapVC_qN_vFm2J8P3f-11" target="snzapVC_qN_vFm2J8P3f-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="snzapVC_qN_vFm2J8P3f-11" value="Secret&lt;div&gt;Keystore&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="snzapVC_qN_vFm2J8P3f-6">
+          <mxGeometry x="420" y="250" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="snzapVC_qN_vFm2J8P3f-13" value="Application&lt;div&gt;Service&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="snzapVC_qN_vFm2J8P3f-6">
+          <mxGeometry x="30" y="147.5" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="snzapVC_qN_vFm2J8P3f-17" value="Application POD&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="snzapVC_qN_vFm2J8P3f-6">
+          <mxGeometry x="150" y="55" width="220" height="385" as="geometry" />
+        </mxCell>
+        <mxCell id="snzapVC_qN_vFm2J8P3f-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="snzapVC_qN_vFm2J8P3f-6" source="snzapVC_qN_vFm2J8P3f-19" target="snzapVC_qN_vFm2J8P3f-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="snzapVC_qN_vFm2J8P3f-19" value="Container&lt;div&gt;Nginx Proxy&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="snzapVC_qN_vFm2J8P3f-6">
+          <mxGeometry x="170" y="270" width="180" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="snzapVC_qN_vFm2J8P3f-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="snzapVC_qN_vFm2J8P3f-6" source="snzapVC_qN_vFm2J8P3f-20" target="snzapVC_qN_vFm2J8P3f-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="snzapVC_qN_vFm2J8P3f-20" value="Configmap&lt;br&gt;Nginx&lt;div&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="snzapVC_qN_vFm2J8P3f-6">
+          <mxGeometry x="20" y="350" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="snzapVC_qN_vFm2J8P3f-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="snzapVC_qN_vFm2J8P3f-6" source="snzapVC_qN_vFm2J8P3f-9" target="snzapVC_qN_vFm2J8P3f-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="130" y="300" />
+              <mxPoint x="130" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="snzapVC_qN_vFm2J8P3f-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="snzapVC_qN_vFm2J8P3f-6" source="snzapVC_qN_vFm2J8P3f-13" target="snzapVC_qN_vFm2J8P3f-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="snzapVC_qN_vFm2J8P3f-25" value="Application container" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="snzapVC_qN_vFm2J8P3f-6">
+          <mxGeometry x="170" y="87.5" width="180" height="162.5" as="geometry" />
+        </mxCell>
+        <mxCell id="snzapVC_qN_vFm2J8P3f-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="snzapVC_qN_vFm2J8P3f-6" source="snzapVC_qN_vFm2J8P3f-27" target="snzapVC_qN_vFm2J8P3f-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="snzapVC_qN_vFm2J8P3f-27" value="Secret&lt;div&gt;JAVA OPTS&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="snzapVC_qN_vFm2J8P3f-6">
+          <mxGeometry x="420" y="360" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="snzapVC_qN_vFm2J8P3f-36" value="&lt;b&gt;DEFAULT HELM CHART&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;NON ISTIO IMPLEMENTATION&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="265" y="180" width="425" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
